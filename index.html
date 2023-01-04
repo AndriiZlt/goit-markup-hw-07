@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 3</title>
+    <title>Homework 7</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -18,9 +18,9 @@
   </head>
 
   <body>
-    <!--HEADER-->
-    <!-- <header class="page-header shadow"> -->
-      <div class="container">
+<!--HEADER-->
+    <header class="page-header shadow">
+      <div class="container menu-position">
         <nav class="header-nav">
           <a href="./index.html" class="logo">Web<span class="studio">Studio</span></a>
           <div class="menu-container" data-menu>
@@ -98,11 +98,13 @@
           </button>
         </nav>
       </div>
-    <!-- </header> -->
+    </header>
 
-    <!-- MAIN -->
+<!-- MAIN -->
     <main>
-      <section class="section">
+
+      <!-- HERO -->
+      <section class="section-hero">
         <div class="container hero">
           <h1>Effective Solutions for Your Business</h1>
           <button data-modal-open class="btn-studio">Order service</button>
@@ -178,7 +180,7 @@
       </section>
 
       <!-- FEATURES -->
-      <section class="sectio-features">
+      <section class="section">
         <div class="container">
           <h2 class="visuallyhidden">Headings</h2>
           <ul class="list features">
@@ -233,6 +235,8 @@
           </ul>
         </div>
       </section>
+
+      <!-- EXAMPLES -->
       <section class="section-examples">
         <div class="container">
           <h2 class="section-title">What Are We Doing</h2>
@@ -444,8 +448,8 @@
       </section>
 
       <!-- CUSTOMERS -->
-      <!-- <section class="section"> -->
-        <div class="container">
+      <section class="section">
+        <div class="container customers">
           <h2 class="section-title customers-heading">Customers</h2>
           <ul class="customers list">
             <li class="customer">
@@ -492,20 +496,20 @@
             </li>
           </ul>
         </div>
-      <!-- </section> -->
+      </section>
     </main>
-    <!-- FOOTER -->
+
+<!-- FOOTER -->
     <footer class="footer">
       <div class="container footer-sections">
         <div class="footer-logo">
           <a href="./index.html" class="logo"
-            >Web<span class="studio-footer">Studio</span>
-          </a>
-          <p>
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
+          >Web<span class="studio-footer">Studio</span></a>
         </div>
+        <p>
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
         <div class="footer-social">
           <h3>Social media</h3>
           <ul class="list media-icons">
@@ -543,7 +547,7 @@
         <div class="mail-footer">
           <label for="mail" class="mail-title">Subscribe</label>
           <div class="mail-field">
-            <input type="email" name="mail" id="mail" placeholder="E-mail" />
+            <input class="mail-input" type="email" name="mail" id="mail" placeholder="E-mail" />
             <button type="submit" class="subscribe-btn">
               Subscribe
               <span>

@@ -892,6 +892,7 @@ a,
   position: relative;
   overflow: hidden;
   height: 280px;
+  z-index: -1;
 }
 
 .overlay::before {

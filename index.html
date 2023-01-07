@@ -19,16 +19,84 @@
 
   <body>
 <!--HEADER-->
-    <header class="page-header shadow">
+    <header class="page-header shadow relative">
+      <!-- Mobile Menu -->
+      <div class="mobile-menu-container is-hidden" data-menu>
+        <button class="menu-close-btn" data-menu-close>
+          <svg width="8" height="8">
+            <use href=".//images/icons.svg#x"></use>
+          </svg>
+        </button>
+        <div class="navigation">
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link menu-link active">Studio</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link menu-link">Portfolio</a>
+            </li>
+            <li class="item">
+              <a href="" class="link menu-link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <ul class="auth-nav list">
+            <li class="item contact-phone">
+              <a href="tel:+11(000)111-11-11" class="link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="item contact-mail">
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list menu-media-icons">
+            <li class="menu-icon">
+              <a class="menu-media-icon" href="">
+                <svg width="16" height="16">
+                  <use
+                    class="media"
+                    href=".//images/icons.svg#instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon">
+              <a class="menu-media-icon" href="">
+                <svg width="16" height="16">
+                  <use
+                    class="media"
+                    href=".//images/icons.svg#twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon">
+              <a class="menu-media-icon" href="">
+                <svg class="media" width="16" height="16">
+                  <use href=".//images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon">
+              <a class="menu-media-icon" href="">
+                <svg class="media" width="16" height="16">
+                  <use href=".//images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--  -->
+
       <div class="container relative">
         <nav class="header-nav">
           <a href="./index.html" class="logo">Web<span class="studio">Studio</span></a>
-          <div class="menu-container" data-menu>
-            <button class="menu-close-button" data-modal-close>
-              <svg width="8" height="8">
-                <use href=".//images/icons.svg#x"></use>
-              </svg>
-            </button>
+          <div class="menu-container">
             <div class="navigation">
               <ul class="site-nav list">
                 <li class="item relative">
@@ -93,7 +161,7 @@
               </ul>
             </div>
           </div>
-          <button type="button" class="open-menu-btn">
+          <button type="button" class="open-menu-btn" data-menu-open>
             <img src="./images/menu-2-converted.svg" alt="menu-button">
           </button>
         </nav>
@@ -107,7 +175,7 @@
       <section class="section-hero">
         <div class="hero">
           <h1>Effective Solutions for Your Business</h1>
-          <button data-modal-open class="btn-studio">Order service</button>
+          <button class="btn-studio" data-modal-open>Order service</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="close-button" data-modal-close>
@@ -242,13 +310,28 @@
           <h2 class="section-title">What Are We Doing</h2>
           <ul class="list">
             <li class="example">
-              <img src="./images/ex1.jpg" alt="desktop" width="360" height="300" />
+              <img 
+                srcset="./images/examples/1/ex1-360.jpg 1x, ./images/examples/1/ex1-720.jpg 2x, ./images/examples/1/ex1-1080.jpg 3x"
+                src="./images/examples/1/ex1-360.jpg" 
+                alt="desktop" 
+                width="360" 
+                height="300" />
             </li>
             <li class="example">
-              <img src="./images/ex2.jpg" alt="mobile_app" width="360" height="300" />
+              <img 
+                srcset="./images/examples/2/ex2-360.jpg 1x, ./images/examples/2/ex2-720.jpg 2x, ./images/examples/2/ex2-1080.jpg 3x"
+                src="/images/examples/2/ex2-360.jpg" 
+                alt="mobile_app" 
+                width="360" 
+                height="300" />
             </li>
             <li class="example">
-              <img src="./images/ex3.jpg" alt="mobile_solutions" width="360" height="300" />
+              <img 
+                srcset="./images/examples/3/ex3-360.jpg 1x, ./images/examples/3/ex3-720.jpg 2x, ./images/examples/3/ex3-1080.jpg 3x"
+                src="./images/examples/3/ex3-360.jpg" 
+                alt="mobile_solutions" 
+                width="360" 
+                height="300" />
             </li>
           </ul>
         </div>
@@ -262,7 +345,8 @@
             <li class="employee">
               <img
                 class="emp-photo"
-                src="./images/emp1.jpg"
+                srcset="./images/employee1/emp1-264.jpg 1x, ./images/employee1/emp1-528.jpg 2x, ./images/employee1/emp1-792.jpg 3x "
+                src="./images/employee1/emp1-264.jpg"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -308,6 +392,7 @@
             <li class="employee">
               <img
                 class="emp-photo"
+                srcset="./images/employee2/emp2-264.jpg 1x, ./images/employee2/emp2-528.jpg 2x, ./images/employee2/emp2-792.jpg 3x "
                 src="./images/emp2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -354,6 +439,7 @@
             <li class="employee">
               <img
                 class="emp-photo"
+                srcset="./images/employee3/emp3-264.jpg 1x, ./images/employee3/emp3-528.jpg 2x, ./images/employee3/emp3-792.jpg 3x "
                 src="./images/emp3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -400,6 +486,7 @@
             <li class="employee">
               <img
                 class="emp-photo"
+                srcset="./images/employee4/emp4-264.jpg 1x, ./images/employee4/emp4-528.jpg 2x, ./images/employee4/emp4-792.jpg 3x "
                 src="./images/emp4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -499,7 +586,7 @@
       </section>
     </main>
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer-section">
         <div class="footer-logo">
@@ -563,5 +650,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

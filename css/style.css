@@ -1575,7 +1575,23 @@ a,
     justify-content: center;
   }
 
-  .btn-filter:nth-last-child(n + 3) {
+  .result:not(:last-child) {
     margin-bottom: 0px;
+  }
+
+  .result:nth-last-child(n + 4) {
+    margin-bottom: 48px;
+  }
+
+  .result {
+    width: 360px;
+  }
+
+  .overlay img {
+    width: 360px;
+  }
+
+  .overlay {
+    height: 300px;
   }
 }

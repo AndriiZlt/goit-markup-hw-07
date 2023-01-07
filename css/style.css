@@ -1378,6 +1378,10 @@ a,
   .result:nth-child(odd) {
     margin-right: 24px;
   }
+
+  .btn-filter:nth-last-child(n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
 /* DESKTOP 1200 and UP --------------------*/
@@ -1557,5 +1561,21 @@ a,
 
   .footer-social {
     margin-right: 80px;
+  }
+
+  .result:nth-child(odd) {
+    margin-right: 0px;
+  }
+
+  .result:not(:nth-child(3n)) {
+    margin-right: 24px;
+  }
+
+  .filter {
+    justify-content: center;
+  }
+
+  .btn-filter:nth-last-child(n + 3) {
+    margin-bottom: 0px;
   }
 }

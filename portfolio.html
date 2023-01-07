@@ -18,25 +18,89 @@
 
   <body>
     <!--HEADER-->
-    <header class="page-header shadow">
-      <div class="container menu-position">
+    <header class="page-header shadow relative">
+      <!-- Mobile Menu -->
+      <div class="mobile-menu-container is-hidden" data-menu>
+        <button class="menu-close-btn" data-menu-close>
+          <svg width="8" height="8">
+            <use href=".//images/icons.svg#x"></use>
+          </svg>
+        </button>
+        <div class="navigation">
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link menu-link active">Studio</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link menu-link">Portfolio</a>
+            </li>
+            <li class="item">
+              <a href="" class="link menu-link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <ul class="auth-nav list">
+            <li class="item contact-phone">
+              <a href="tel:+11(000)111-11-11" class="link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="item contact-mail">
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list menu-media-icons">
+            <li class="menu-icon">
+              <a class="menu-media-icon" href="">
+                <svg width="16" height="16">
+                  <use class="media" href=".//images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon">
+              <a class="menu-media-icon" href="">
+                <svg width="16" height="16">
+                  <use class="media" href=".//images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon">
+              <a class="menu-media-icon" href="">
+                <svg class="media" width="16" height="16">
+                  <use href=".//images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-icon">
+              <a class="menu-media-icon" href="">
+                <svg class="media" width="16" height="16">
+                  <use href=".//images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--  -->
+
+      <div class="container relative">
         <nav class="header-nav">
           <a href="./index.html" class="logo"
             >Web<span class="studio">Studio</span></a
           >
-          <div class="menu-container" data-menu>
-            <button class="menu-close-button" data-modal-close>
-              <svg width="8" height="8">
-                <use href=".//images/icons.svg#x"></use>
-              </svg>
-            </button>
+          <div class="menu-container">
             <div class="navigation">
               <ul class="site-nav list">
                 <li class="item relative">
-                  <a href="./index.html" class="link menu-link">Studio</a>
+                  <a href="./index.html" class="link menu-link active"
+                    >Studio</a
+                  >
                 </li>
                 <li class="item relative">
-                  <a href="./portfolio.html" class="link menu-link active"
+                  <a href="./portfolio.html" class="link menu-link"
                     >Portfolio</a
                   >
                 </li>
@@ -96,7 +160,7 @@
               </ul>
             </div>
           </div>
-          <button type="button" class="open-menu-btn">
+          <button type="button" class="open-menu-btn" data-menu-open>
             <img src="./images/menu-2-converted.svg" alt="menu-button" />
           </button>
         </nav>
@@ -105,11 +169,11 @@
 
     <!-- MAIN -->
     <main>
-      <section class="section portfolio">
+      <section class="section">
         <div class="container">
           <!-- FILTER -->
           <h2 class="visuallyhidden">Filter</h2>
-          <ul class="list filter-btn">
+          <ul class="filter list">
             <li class="btn-filter">
               <button type="button" class="btn-portfolio">All</button>
             </li>

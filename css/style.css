@@ -1001,7 +1001,7 @@ a,
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 
   .menu-container {

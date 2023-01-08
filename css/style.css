@@ -1122,7 +1122,7 @@ a,
   }
 
   .customer:nth-child(odd) {
-    padding-right: 16px;
+    margin-right: 16px;
   }
 
   .customer:nth-last-child(n + 3) {
@@ -1364,6 +1364,10 @@ a,
 
   .customer-icon {
     width: 168px;
+  }
+
+  .customer:nth-child(odd) {
+    margin-right: 0px;
   }
 
   .customer:nth-last-child(n + 3) {
